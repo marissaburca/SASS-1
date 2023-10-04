@@ -70,58 +70,224 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-h1 {
-  font-size: 60px;
+.big {
+  font-size: 100px;
 }
 
-p {
+.small {
   font-size: 30px;
 }
 
+.logo {
+  font-size: 50px;
+}
+
+/* $show nome di fantasia per definire il tipo di display */
+.padding-inline-sm {
+  padding-inline: 12px;
+}
+
+.padding-inline-normal {
+  padding-inline: 16px;
+}
+
+.padding-inline-md {
+  padding-inline: 20px;
+}
+
+.padding-inline-lg {
+  padding-inline: 28px;
+}
+
+.padding-inline-xl {
+  padding-inline: 32px;
+}
+
+.padding-inline-xxl {
+  padding-inline: 40px;
+}
+
 .padding-block-sm {
-  padding: 12px;
+  padding-block: 12px;
 }
 
 .padding-block-normal {
-  padding: 16px;
+  padding-block: 16px;
 }
 
 .padding-block-md {
-  padding: 20px;
+  padding-block: 20px;
 }
 
 .padding-block-lg {
-  padding: 28px;
+  padding-block: 28px;
 }
 
 .padding-block-xl {
-  padding: 32px;
+  padding-block: 32px;
 }
 
 .padding-block-xxl {
-  padding: 40px;
+  padding-block: 40px;
+}
+
+.margin-inline-sm {
+  margin-inline: 12px;
+}
+
+.margin-inline-normal {
+  margin-inline: 16px;
+}
+
+.margin-inline-md {
+  margin-inline: 20px;
+}
+
+.margin-inline-lg {
+  margin-inline: 28px;
+}
+
+.margin-inline-xl {
+  margin-inline: 32px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 40px;
 }
 
 .margin-block-sm {
-  margin: 12px;
+  margin-block: 12px;
 }
 
 .margin-block-normal {
-  margin: 16px;
+  margin-block: 16px;
 }
 
 .margin-block-md {
-  margin: 20px;
+  margin-block: 20px;
 }
 
 .margin-block-lg {
-  margin: 28px;
+  margin-block: 28px;
 }
 
 .margin-block-xl {
-  margin: 32px;
+  margin-block: 32px;
 }
 
 .margin-block-xxl {
-  margin: 40px;
+  margin-block: 40px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  margin: 3px;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #0e6cff;
+  color: #f4f4f4;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+  color: #f4f4f4;
+}
+
+.btn-tertiary {
+  background-color: #4caf50;
+  color: #f4f4f4;
+}
+
+.translate-10 {
+  translate: 0 10%;
+}
+
+.translate-20 {
+  translate: 0 20%;
+}
+
+.translate-25 {
+  translate: 0 25%;
+}
+
+.translate-33 {
+  translate: 0 33%;
+}
+
+.translate-50 {
+  translate: 0 50%;
+}
+
+.translate-65 {
+  translate: 0 65%;
+}
+
+.translate-75 {
+  translate: 0 75%;
+}
+
+.translate-90 {
+  translate: 0 90%;
+}
+
+.translate-100 {
+  translate: 0 100%;
+}
+
+button:first-of-type {
+  animation-name: animate-from-top-A1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 800ms;
+}
+
+button:nth-of-type(2) {
+  animation-name: animate-from-top-A2;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
+
+button:last-of-type {
+  animation-name: animate-from-top-A3;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1000ms;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.display > * {
+  width: 25%;
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col {
+  width: 50%;
+}
+
+.col1 {
+  width: 50%;
+  display: flex;
+  justify-content: end;
 }/*# sourceMappingURL=styles.css.map */

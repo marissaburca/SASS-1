@@ -2,11 +2,15 @@ $font-default: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 body{
     font-family:$font-default
 }
-$font-h1: 60px;
-h1{
+$font-h1: 100px;
+.big{
     font-size: $font-h1;
 }
 $font-p: 30px;
-p{
+.small{
     font-size: $font-p;
+}
+$logo-tall: 50px;
+.logo{
+    font-size: $logo-tall;
 }

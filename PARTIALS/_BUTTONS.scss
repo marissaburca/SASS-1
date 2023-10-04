@@ -1,6 +1,27 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    height:50px;
+    margin: 3px;
 
-@mixin generic-button{
-    padding:10px 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 10px black;
-}
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+  
+  $btn-colors: (
+    primary: $btn1-color,
+    secondary: $btn2-color,
+    tertiary: $btn3-color
+  );
+  
+  @each $color, $value in $btn-colors {
+    .btn-#{$color} {
+      background-color: $value;
+      color: $main-color;
+    }
+  }

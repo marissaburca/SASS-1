@@ -1,3 +1,5 @@
+$padding-default: 20px;
+$margin-default: 0 auto;
 $sizes:(
     sm:12px,
     normal:16px,
@@ -6,13 +8,32 @@ $sizes:(
     xl:32px,
     xxl:40px,
 );
-@each $size, $value in $sizes{
-    .padding-block-#{$size}{
-        padding:$value;
+@mixin generate-padding($show: null) {
+    @each $large, $value in $sizes {
+      .padding-#{$show}-#{$large} {
+        @if $show {
+          padding-#{$show}: $value;
+        } @else {
+          padding: $value;
+        }
+      }
     }
-}
-@each $size, $value in $sizes{
-    .margin-block-#{$size}{
-        margin:$value;
+  }
+
+  @mixin generate-margins($show: null) {
+    @each $large, $value in $sizes {
+      .margin-#{$show}-#{$large} {
+        @if $show {
+          margin-#{$show}: $value;
+        } @else {
+          margin: $value;
+        }
+      }
     }
-}
+  }
+  /* $show nome di fantasia per definire il tipo di display */
+  @include generate-padding(inline);
+  @include generate-padding(block);
+  
+  @include generate-margins(inline);
+  @include generate-margins(block);

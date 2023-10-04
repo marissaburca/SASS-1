@@ -1,54 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <title>SASS 1</title>
 </head>
-<body>
-   <nav>
-    <div class="row">
-        <div class="col">
-        <img src="ASSETS/8922.jpg">
-        </div>
-        <div class="col">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Servizi</a></li>
-        </ul>
-        </div>
-    </div>
-   </nav> 
-   <main>
-    <section class=" hero row">
-        <div class="col">
-            <h1>Titolo</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, soluta. Quis provident mollitia ratione fugit eum modi ea, tenetur, officiis aperiam accusantium harum nostrum eaque expedita laborum voluptas praesentium deserunt.</p>
-            <button>Scopri di più</button>
-            <button>Accedi</button>
-            <button>Contattaci</button>
-        </div>
-        <div class="col">
-            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg">
-        </div>
-    </section>
-    <article class="row">
-        <div class="col">
-            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg">
-        </div>
-        <div class="col">
-            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg">
-        </div>
-        <div class="col">
-            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg">
-        </div>
-        <div class="col">
-            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg">
-        </div>
 
-    </article>
-   </main>
+<body>
+    <header>
+        <nav class="row padding-block-md padding-inline-md">
+            <h1 class="logo col">H-Intensity</h1>
+            <ul class="col1">
+                <li class="padding-inline-md paddin"><a href="#">Home</a></li>
+                <li class="padding-inline-md"><a href="#">About</a></li>
+                <li class="padding-inline-md"><a href="#">Servizi</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="hero row padding-block-md padding-inline-md">
+                <div class="col">
+                <h1 class="big padding-block-md padding-inline-md">Let's try,<br /> become Web Developer!</h1>
+                <p class="small padding-block-md padding-block-md padding-inline-md">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est eligendi tempore atque laborum.
+                    Quisquam nemo at non. Corrupti, vitae dolore.
+                </p>
+                <div class="padding-inline-md">
+                <button class="btn btn-primary">Scopri di più</button>
+                <button class="btn btn-secondary ">Accedi</button>
+                <button class="btn btn-tertiary">Contattaci</button>
+            </div>
+            </div>
+            <div class="col1 voilat">
+            <img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg" class=".translate-33" height="400" width="600" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="display">
+            <div><img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg" height="400" width="400" /></div>
+            <div><img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg" height="400" width="400" /></div>
+            <div><img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg" height="400" width="400" /></div>
+            <div><img src="ASSETS/pngtree-high-tech-data-flow-abstract-big-data-network-advertising-background-picture-image_2273145.jpg" height="400" width="400" /></div>
+
+        </div>
+    </main>
 </body>
+
 </html>

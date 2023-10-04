@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+    font-family: 'Indie Flower', cursive;
+}
+$font-h1: 60px;
+h1{
+    font-size: $font-h1;
+}
+$font-p: 30px;
+p{
+    font-size: $font-p;
+}
+@mixin title-big($myHeight){
+    font-size:$myHeight
+}

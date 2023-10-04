@@ -1,0 +1,18 @@
+$sizes:(
+    sm:12px,
+    normal:16px,
+    md:20px,
+    lg:28px,
+    xl:32px,
+    xxl:40px,
+);
+@each $size, $value in $sizes{
+    .padding-block-#{$size}{
+        padding:$value;
+    }
+}
+@each $size, $value in $sizes{
+    .margin-block-#{$size}{
+        margin:$value;
+    }
+}
